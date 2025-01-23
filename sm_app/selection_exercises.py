@@ -30,3 +30,6 @@ with sqlite3.connect('sm_app.sqlite') as conn:
     ex1_headers,ex1_data = execute_read_query(conn,ex1)
     print(tabulate(ex1_data,headers=ex1_headers,tablefmt='psql'))
 
+    cur=conn.cursor()
+    cur.execute(ex2)
+
