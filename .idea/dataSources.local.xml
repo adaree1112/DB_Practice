@@ -25,5 +25,10 @@
         </introspection-scope>
       </schema-mapping>
     </data-source>
+    <data-source name="activities" uuid="d850150f-1948-4473-a0e6-9f9a707b2014">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" />
+      <auth-provider>no-auth</auth-provider>
+      <schema-mapping />
+    </data-source>
   </component>
 </project>
