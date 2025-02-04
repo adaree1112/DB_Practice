@@ -18,6 +18,8 @@ people[1].activities.append(fives)
 
 room = Location(room="Room 5")
 chess.location=room
+fives.location=room
+
 
 engine = create_engine('sqlite:///activities.sqlite',echo=True)
 
