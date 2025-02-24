@@ -1,43 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="PY-243.21565.199">
-    <data-source name="student.sqlite" uuid="6c95c6c9-7e6a-4039-b748-448d09edbb63">
-      <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="sm_app" uuid="a48f207b-baf1-45db-8fe1-39c695c231e5">
-      <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="activities" uuid="e0cc9dc6-4c0b-41cf-bacf-671d2bc39cb1">
-      <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
-      <auth-provider>no-auth</auth-provider>
-      <schema-mapping>
-        <introspection-scope>
-          <node kind="schema" qname="@" />
-        </introspection-scope>
-      </schema-mapping>
-    </data-source>
-    <data-source name="Sm_app" uuid="eaca40c7-fe0a-4e8e-99c0-5e4e9e2fdf71">
+    <data-source name="Sm_app" uuid="80a9c100-532a-4b8f-9f1f-5c4c589a50cd">
       <database-info product="SQLite" version="3.45.1" jdbc-version="4.2" driver-name="SQLite JDBC" driver-version="3.45.1.0" dbms="SQLITE" exact-version="3.45.1" exact-driver-version="3.45">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>

@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9df929bd-ccee-405e-847d-3a6d29c09bac" name="Changes" comment="not initial">
-      <change afterPath="$PROJECT_DIR$/SM app ORM/Create.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM app ORM/Models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SM app ORM/write.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Activities/Write_to_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Activities/Write_to_db.py" afterDir="false" />
-    </list>
+    <list default="true" id="9df929bd-ccee-405e-847d-3a6d29c09bac" name="Changes" comment="not initial" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +57,7 @@
     "Python.console_commands.executor": "Run",
     "Python.create_db.executor": "Run",
     "Python.models.executor": "Run",
+    "Python.read.executor": "Run",
     "Python.read_from_student.executor": "Run",
     "Python.selection_exercises.executor": "Run",
     "Python.write.executor": "Run",
@@ -98,60 +91,6 @@
       <recent name="C:\Users\adam\PycharmProjects\DB_Practice\Student" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Create" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DB_Practice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SM app ORM" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SM app ORM/Create.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="console_commands" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="DB_Practice" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Activities" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Activities/console_commands.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.Create" />
-        <item itemvalue="Python.console_commands" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -175,6 +114,7 @@
       <workItem from="1737647005439" duration="524000" />
       <workItem from="1738592468520" duration="169000" />
       <workItem from="1738592647058" duration="2530000" />
+      <workItem from="1740407351535" duration="2232000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -205,18 +145,19 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DB_Practice$Write_to_student_database.coverage" NAME="Write_to_student_database Coverage Results" MODIFIED="1737387194936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DB_Practice$Models.coverage" NAME="Models Coverage Results" MODIFIED="1738837204853" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
+    <SUITE FILE_PATH="coverage/DB_Practice$Models.coverage" NAME="Models Coverage Results" MODIFIED="1740409213890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
     <SUITE FILE_PATH="coverage/DB_Practice$Update_student.coverage" NAME="Update student Coverage Results" MODIFIED="1737386812927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DB_Practice$Create_sm_app.coverage" NAME="Create sm_app Coverage Results" MODIFIED="1737647100034" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sm_app" />
     <SUITE FILE_PATH="coverage/DB_Practice$write_to_social_media.coverage" NAME="write_to_social_media Coverage Results" MODIFIED="1737647118049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sm_app" />
     <SUITE FILE_PATH="coverage/DB_Practice$read_from_student.coverage" NAME="read_from_student Coverage Results" MODIFIED="1737405288559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DB_Practice$Create.coverage" NAME="Create Coverage Results" MODIFIED="1738837208454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
+    <SUITE FILE_PATH="coverage/DB_Practice$Create.coverage" NAME="Create Coverage Results" MODIFIED="1740409352102" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
     <SUITE FILE_PATH="coverage/DB_Practice$create_db.coverage" NAME="create_db Coverage Results" MODIFIED="1738834889604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Activities" />
     <SUITE FILE_PATH="coverage/DB_Practice$write_to_db.coverage" NAME="write_to_db Coverage Results" MODIFIED="1738837505992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Activities" />
     <SUITE FILE_PATH="coverage/DB_Practice$Student_table.coverage" NAME="Student table Coverage Results" MODIFIED="1737386265967" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DB_Practice$Selecting_from_sm.coverage" NAME="Selecting_from_sm Coverage Results" MODIFIED="1737627179526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sm_app" />
     <SUITE FILE_PATH="coverage/DB_Practice$models.coverage" NAME="models Coverage Results" MODIFIED="1738594878752" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Activities" />
-    <SUITE FILE_PATH="coverage/DB_Practice$write.coverage" NAME="write Coverage Results" MODIFIED="1738837758760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
+    <SUITE FILE_PATH="coverage/DB_Practice$read.coverage" NAME="read Coverage Results" MODIFIED="1740409504331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
+    <SUITE FILE_PATH="coverage/DB_Practice$write.coverage" NAME="write Coverage Results" MODIFIED="1740409381502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
     <SUITE FILE_PATH="coverage/DB_Practice$Write_to_db.coverage" NAME="Write_to_db Coverage Results" MODIFIED="1738595175340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Activities" />
     <SUITE FILE_PATH="coverage/DB_Practice$selection_exercises.coverage" NAME="selection_exercises Coverage Results" MODIFIED="1737647521173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sm_app" />
   </component>
