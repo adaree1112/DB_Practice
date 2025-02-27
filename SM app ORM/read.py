@@ -1,6 +1,6 @@
 from sqlalchemy import create_engine,select
 from sqlalchemy.orm import Session
-from Models import User, Post, Comment, Base
+from models import User, Post, Comment, Base
 
 engine = create_engine('sqlite:///Sm_app.sqlite')
 session = Session(bind=engine)

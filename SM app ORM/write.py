@@ -1,10 +1,11 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
 
-from Models import Post, User, Comment
+from models import Post, User, Comment
 
 engine = create_engine('sqlite:///Sm_app.sqlite', echo=True)
 session = Session(bind=engine)
+
 """
 people = [User(name="Adam",age=16,gender="male",nationality="a"), User(name="Alex",age=18,gender="male",nationality="b"),
           User(name="Andrew",age=19,gender="male",nationality="c")]
