@@ -20,7 +20,7 @@ class User(Base):
     name: so.Mapped[str] = so.mapped_column(unique=True)
     age: so.Mapped[int]
     gender: so.Mapped[str]
-    nationality: so.Mapped[str]
+    nationality: so.Mapped[str|None]
     posts: so.Mapped[list["Post"]] = so.relationship("Post",back_populates="user")
     liked_posts: so.Mapped[list["Post"]] = so.relationship("Post",
                                                            secondary=like,
