@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9df929bd-ccee-405e-847d-3a6d29c09bac" name="Changes" comment="not initial">
-      <change afterPath="$PROJECT_DIR$/SM app ORM/db test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Activities/Write_to_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/Activities/Write_to_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SM app ORM/db test.py" beforeDir="false" afterPath="$PROJECT_DIR$/SM app ORM/db test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +33,7 @@
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/adaree1112/DB_Practice.git",
-    "accountId": "0d4f811f-bef9-416e-ae95-c85f2b00abfd"
+    "accountId": "ff654f42-188f-42fa-9e6f-de5d8b07ee7a"
   }
 }]]></component>
   <component name="HighlightingSettingsPerFile">
@@ -49,39 +49,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python tests.Python tests in db test.py.executor": "Run",
-    "Python.Create sm_app.executor": "Run",
-    "Python.H or L.executor": "Run",
-    "Python.Student table.executor": "Run",
-    "Python.Update student.executor": "Run",
-    "Python.Write_to_student_database.executor": "Run",
-    "Python.app.executor": "Run",
-    "Python.create.executor": "Run",
-    "Python.read_from_student.executor": "Run",
-    "Python.write.executor": "Run",
-    "Python.write_to_social_media.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "full.screen.before.presentation.mode": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/adaree1112/OneDrive - Highgate School/Computing/Calculator friendly games/H or L.py",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python tests.Python tests in db test.py.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Create sm_app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.H or L.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Student table.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Update student.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Write_to_student_database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.app.executor&quot;: &quot;Run&quot;,
+    &quot;Python.create.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_from_student.executor&quot;: &quot;Run&quot;,
+    &quot;Python.write.executor&quot;: &quot;Run&quot;,
+    &quot;Python.write_to_social_media.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/adaree1112/OneDrive - Highgate School/Computing/Calculator friendly games/H or L.py&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "sqlite"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;sqlite&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\adaree1112\Documents\Pycharm\DB_Practice" />
@@ -113,6 +113,7 @@
       <workItem from="1741177107124" duration="1839000" />
       <workItem from="1741178972126" duration="605000" />
       <workItem from="1741618295139" duration="727000" />
+      <workItem from="1741619946882" duration="1537000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <option name="closed" value="true" />
@@ -152,6 +153,6 @@
     <SUITE FILE_PATH="coverage/DB_Practice$write.coverage" NAME="write Coverage Results" MODIFIED="1741177403475" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
     <SUITE FILE_PATH="coverage/DB_Practice$Create_sm_app.coverage" NAME="Create sm_app Coverage Results" MODIFIED="1737406284650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sm_app" />
     <SUITE FILE_PATH="coverage/DB_Practice$app.coverage" NAME="app Coverage Results" MODIFIED="1741177409116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
-    <SUITE FILE_PATH="coverage/DB_Practice$.coverage" NAME=" Coverage Results" MODIFIED="1741618561567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
+    <SUITE FILE_PATH="coverage/DB_Practice$.coverage" NAME=" Coverage Results" MODIFIED="1741621489157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SM app ORM" />
   </component>
 </project>
