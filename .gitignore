@@ -2,3 +2,4 @@
 /Activities/activities.sqlite
 /SM app ORM/Sm_app.sqlite
 /.venv/
+/SM app ORM/test_database.db

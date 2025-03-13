@@ -4,8 +4,11 @@ import sqlalchemy.orm as so
 from sqlalchemy.exc import IntegrityError
 
 from models import User, Post, Comment, Base, like
+from write import write_initial_data
+from app import Controller
 
-test_db_location = "sqlite:///:memory:"
+test_db_location = "sqlite:///test_database.db"
+
 
 class TestDatabase:
     @pytest.fixture(scope="class")
@@ -106,3 +109,50 @@ class TestDatabase:
         with pytest.raises(IntegrityError):
             db_session.commit()
         db_session.rollback()
+
+
+class TestController:
+    @pytest.fixture(scope="class",autouse=True)
+    def test_db(self):
+        engine = sa.create_engine(test_db_location)
+        Base.metadata.create_all(engine)
+        write_initial_data(engine)
+        yield
+        Base.metadata.drop_all(engine)
+    @pytest.fixture(scope="class")
+    def controller(self):
+        return Controller(db_location=test_db_location)
+
+
+    def test_set_current_user_from_name(self,controller):
+        controller.set_current_user_from_name("Alice")
+        assert controller.current_user.name == "Alice"
+        assert controller.current_user.gender == "Female"
+        assert controller.current_user.id == 1
+        assert controller.current_user.age == 30
+
+    def test_get_user_names(self,controller):
+        user_names = controller.get_user_names()
+        assert user_names == ["Alice", "Bob", "Charlie", "Diana"]
+
+    def test_create_user(self,controller):
+        controller.create_user("Eve", 29, "Female", "New Zealand")
+        assert controller.current_user.name == "Eve"
+        assert controller.current_user.age == 29
+        assert controller.current_user.gender == "Female"
+        assert controller.current_user.nationality == "New Zealand"
+
+    def test_create_post(self):
+        assert False
+
+    def test_get_current_user(self):
+        assert False
+
+    def test_get_posts(self):
+        assert False
+
+    def test_add_comment(self):
+        assert False
+
+    def test_like_post(self):
+        assert False

@@ -5,9 +5,9 @@ from models import User, Post, Comment
 import pyinputplus as pyip
 
 class Controller:
-    def __init__(self):
+    def __init__(self,db_location='sqlite:///Sm_app.sqlite'):
         self.current_user = None
-        self.engine = create_engine('sqlite:///Sm_app.sqlite')
+        self.engine = create_engine(db_location)
 
     def set_current_user_from_name(self, name):
         with Session(bind=self.engine) as session:
@@ -21,6 +21,7 @@ class Controller:
     def create_user(self, name: str, age: int, gender: str, nationality: str) -> User:
         with Session(bind=self.engine) as session:
             user= User(name=name, age=age, gender=gender, nationality=nationality)
+            user = session.merge(user)
             session.add(user)
             session.commit()
             self.current_user = user
@@ -181,5 +182,5 @@ class CLI:
 
         if not posts:
             print("No posts found")
-
-CLI()
+if __name__=="__main__":
+    CLI()
