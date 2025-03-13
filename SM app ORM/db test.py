@@ -3,7 +3,7 @@ import sqlalchemy as sa
 import sqlalchemy.orm as so
 from sqlalchemy.exc import IntegrityError
 
-from models import User, Post, Comment, Base, like
+from models import User, Post, Comment, Base
 from write import write_initial_data
 from app import Controller
 
@@ -135,24 +135,59 @@ class TestController:
         user_names = controller.get_user_names()
         assert user_names == ["Alice", "Bob", "Charlie", "Diana"]
 
-    def test_create_user(self,controller):
-        controller.create_user("Eve", 29, "Female", "New Zealand")
-        assert controller.current_user.name == "Eve"
-        assert controller.current_user.age == 29
-        assert controller.current_user.gender == "Female"
-        assert controller.current_user.nationality == "New Zealand"
+    def test_create_user(self, controller):
+        user = controller.create_user(name="Eve", age=27, gender="Female", nationality="German")
 
-    def test_create_post(self):
-        assert False
+        assert user is not None
+        assert user.name == "Eve"
+        assert user.age == 27
+        assert user.gender == "Female"
+        assert user.nationality == "German"
 
-    def test_get_current_user(self):
-        assert False
+        user_names = controller.get_user_names()
+        assert "Eve" in user_names
 
-    def test_get_posts(self):
-        assert False
+    def test_create_post(self, controller):
+        controller.set_current_user_from_name("Alice")
+        post = controller.create_post(title="A Day at the Beach", description="Had an amazing time at the beach today!")
 
-    def test_add_comment(self):
-        assert False
+        assert post is not None
+        assert post.title == "A Day at the Beach"
+        assert post.description == "Had an amazing time at the beach today!"
+        assert post.user_id is not None
 
-    def test_like_post(self):
-        assert False
+        posts = controller.get_posts("Alice")
+        assert any(p["title"] == "A Day at the Beach" for p in posts)
+
+    def test_get_current_user(self, controller):
+        controller.set_current_user_from_name("Alice")
+        user = controller.get_current_user()
+
+        assert user is not None
+        assert user.name == "Alice"
+        assert user.age == 30
+        assert user.gender == "Female"
+        assert user.nationality == "Canadian"
+
+    def test_get_posts(self, controller):
+        controller.set_current_user_from_name("Alice")
+
+        controller.create_post(title="Alice's Adventure", description="A story about Alice's travels.")
+
+        posts = controller.get_posts("Alice")
+
+        assert len(posts) > 0
+        assert any(
+            p["title"] == "Alice's Adventure" and p["description"] == "A story about Alice's travels." for p in posts)
+
+    def test_add_comment(self, controller):
+        controller.set_current_user_from_name("Alice")
+
+        post = controller.create_post(title="Alice's Adventure", description="A story about Alice's travels.")
+
+        controller.add_comment(post_id=post.id, comment_text="What a fantastic adventure, Alice!")
+
+        posts = controller.get_posts("Alice")
+        assert len(posts) > 0
+        post_info = next(p for p in posts if p["id"] == post.id)
+        assert any(comment["comment"] == "What a fantastic adventure, Alice!" for comment in post_info["comments"])

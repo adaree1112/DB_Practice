@@ -24,6 +24,7 @@ class Controller:
             user = session.merge(user)
             session.add(user)
             session.commit()
+            session.refresh(user)
             self.current_user = user
         return user
 
@@ -34,6 +35,7 @@ class Controller:
             post= Post(title=title,description=description,)
             user.posts.append(post)
             session.commit()
+            session.refresh(post)
             self.current_user = user
             return post
 
